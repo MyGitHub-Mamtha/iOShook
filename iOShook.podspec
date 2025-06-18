@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
  s.source           = { :git => 'https://github.com/MyGitHub-Mamtha/iOShook', :tag => s.version }
 
   s.ios.deployment_target = '11.0'
-  s.source_files     = 'hooks/*'
+  s.source_files     = 'hook/*'
   s.requires_arc = false
  
 end
