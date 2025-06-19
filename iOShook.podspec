@@ -11,4 +11,4 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.source_files     = 'hook/*'
   s.requires_arc = false
-end
+ end
