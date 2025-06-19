@@ -11,4 +11,9 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.source_files     = '.git/hooks/*'
   s.requires_arc = false
+  s.script_phase = {
+  :name => 'Install Pre-commit Hook',
+  :script => 'bash "${PODS_TARGET_SRCROOT}/Hooks/pre-commit.sh"',
+  :execution_position => :before_compile
+}
  end
