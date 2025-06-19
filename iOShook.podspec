@@ -9,11 +9,11 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/MyGitHub-Mamtha/iOShook', :tag => s.version }
 
   s.ios.deployment_target = '11.0'
-  s.source_files     = '.git/hooks/*'
+  s.source_files     = 'iOShook/Hook/*'
   s.requires_arc = false
   s.script_phase = {
   :name => 'Install Pre-commit Hook',
-  :script => 'bash "${PODS_TARGET_SRCROOT}/Hooks/pre-commit.sh"',
+  :script => 'bash "${PODS_TARGET_SRCROOT}/Hook/pre-commit.sh"',
   :execution_position => :before_compile
 }
  end
