@@ -13,7 +13,8 @@ Pod::Spec.new do |s|
   s.requires_arc = false
   s.script_phase = {
   :name => 'Install Pre-commit Hook',
-  :script => 'bash "${PODS_TARGET_SRCROOT}/Hook/pre-commit.sh"',
+  :script => 'bash "${PODS_TARGET_SRCROOT}/Hook/pre-commit"',
   :execution_position => :before_compile
+  :shell_path => '/bin/sh'
 }
  end
